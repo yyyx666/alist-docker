@@ -3,7 +3,7 @@
 umask ${UMASK}
 
 if [ "$1" = "version" ]; then
-  ./alist version
+  ./openlist version
 else
   if [ "$RUN_ARIA2" = "true" ]; then
      
