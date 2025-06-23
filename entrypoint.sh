@@ -15,5 +15,5 @@ else
   fi
 
   
-  ./alist server --no-prefix
+  ./openlist server --no-prefix
 fi
