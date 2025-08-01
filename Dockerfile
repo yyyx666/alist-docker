@@ -2,6 +2,9 @@ from openlistteam/openlist:v4.0.2-aio
 
 RUN apk update && \
     apk add --no-cache nginx && \
+    mkdir -p /run/nginx && \
+    ln -sf /dev/stdout /var/log/nginx/access.log && \
+    ln -sf /dev/stderr /var/log/nginx/error.log
 	
 copy nginx.conf /etc/nginx/nginx.conf
 run chmod 777 /etc/nginx/nginx.conf
