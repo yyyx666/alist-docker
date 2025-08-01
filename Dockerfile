@@ -23,3 +23,4 @@ run chmod 777 /opt/aria2/.aria2 && chmod 777 /opt/aria2 && chmod 777 /opt/openli
 run mkdir /opt/openlist/data/temp
 run chmod 777 /opt/openlist/data/temp
 
+CMD [ "nginx -g daemon off && /entrypoint.sh" ]
