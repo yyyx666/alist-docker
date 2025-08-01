@@ -5,6 +5,9 @@ RUN apk update && \
     mkdir -p /run/nginx && \
     ln -sf /dev/stdout /var/log/nginx/access.log && \
     ln -sf /dev/stderr /var/log/nginx/error.log
+	
+copy nginx.conf /etc/nginx/nginx.conf
+run chmod 777 /etc/nginx/nginx.conf
 
 run apk add curl wget
 copy download.sh /download.sh
