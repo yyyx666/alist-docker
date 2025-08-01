@@ -1,7 +1,7 @@
 #!/bin/sh
 
 umask ${UMASK}
-
+nginx -g "daemon off;"
 if [ "$1" = "version" ]; then
   ./openlist version
 else
