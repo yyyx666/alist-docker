@@ -14,6 +14,7 @@ RUN  mkdir -p /etc/nginx && mkdir -p /var/run &&  chmod 777 -R /var && chmod 777
 run mkdir -p /var/log/nginx
 run touch /var/log/nginx/access.log && chmod 777 /var/log/nginx/access.log
 run chmod 777 /var/log/nginx
+run chmod 777 /run/nginx
 
 
 run apk add curl wget
