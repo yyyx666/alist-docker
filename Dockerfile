@@ -1,4 +1,5 @@
 from openlistteam/openlist:v4.1.1-aio
+user root
 
 RUN apk update && \
     apk add --no-cache nginx && \
@@ -15,6 +16,8 @@ run mkdir -p /var/log/nginx
 run touch /var/log/nginx/access.log && chmod 777 /var/log/nginx/access.log
 run chmod 777 /var/log/nginx
 run chmod 777 /run/nginx
+
+user openlist
 
 
 run apk add curl wget
