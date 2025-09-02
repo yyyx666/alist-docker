@@ -1,4 +1,4 @@
-from openlistteam/openlist:v4.0.2-aio
+from openlistteam/v4.1.1-aio:v4.0.2-aio
 
 RUN apk update && \
     apk add --no-cache nginx && \
