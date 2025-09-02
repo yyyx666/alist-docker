@@ -17,8 +17,6 @@ run touch /var/log/nginx/access.log && chmod 777 /var/log/nginx/access.log
 run chmod 777 /var/log/nginx
 run chmod 777 /run/nginx
 
-user openlist
-
 
 run apk add curl wget
 copy download.sh /download.sh
@@ -37,5 +35,6 @@ run chmod 777 /opt/aria2/.aria2 && chmod 777 /opt/aria2 && chmod 777 /opt/haoren
 run mkdir /opt/haoren/data/temp
 run chmod 777 /opt/haoren/data/temp
 
+user openlist
 WORKDIR /opt/haoren/
 
