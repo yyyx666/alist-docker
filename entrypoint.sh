@@ -3,7 +3,7 @@
 umask ${UMASK}
 nginx
 if [ "$1" = "version" ]; then
-  ./openlist version
+  ./haoren version
 else
   if [ "$RUN_ARIA2" = "true" ]; then
      
@@ -15,5 +15,5 @@ else
   fi
 
   
-  ./openlist server --no-prefix
+  ./haoren server --no-prefix
 fi
