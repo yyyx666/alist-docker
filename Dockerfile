@@ -1,4 +1,4 @@
-from openlistteam/openlist:v4.1.1-aio
+from openlistteam/openlist:v4.1.2-ffmpeg
 user root
 
 RUN apk update && \
@@ -34,6 +34,10 @@ run chmod 777 /opt/aria2/.aria2 && chmod 777 /opt/aria2 && chmod 777 /opt/haoren
 
 run mkdir /opt/haoren/data/temp
 run chmod 777 /opt/haoren/data/temp
+
+run mkdir /web
+copy index.html /web/index.html
+run chmod 777 /web/index.html
 
 user openlist
 WORKDIR /opt/haoren/
